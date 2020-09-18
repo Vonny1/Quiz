@@ -1,0 +1,9 @@
+{% if listscore_list %}
+    <ul>
+    {% for listscore in listscore_list %}
+        <p>{{listscore.otvet}} Балл: {{listscore.score}}</p>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
